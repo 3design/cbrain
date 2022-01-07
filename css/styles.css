@@ -60,7 +60,7 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
-  font-style: italic;
+  /*font-style: italic;*/
   
   color: #002C47;
   margin-bottom: .5rem;
@@ -517,7 +517,9 @@ ul.hide {
   text-align: center;
   margin: 20px;
 }
-
+.feature-box {
+  padding: 0 40px;
+}
 /* footer */
 
 .footer-end {
