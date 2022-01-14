@@ -36,56 +36,50 @@
   <!-- navigation -->
   <nav class="site-nav ">
     <div class="nav-container ">
-      <div class="branding active"><a href="index.html"><strong>cbrain</strong></a></div>
+      <div class="branding"><a href="index.html"><strong>cbrain</strong></a></div>
       <div id="showmenu">Menu</div>
       <ul id="menu" class="nav-list hide">
         <li class="nav-item"><a href="features.html">features</a></li>
         <li class="nav-item"><a href="getstarted.html">getting started</a></li>
         <li class="nav-item"><a href="faq.html">faq</a></li>
-        <li class="nav-item"><a href="about.html">about</a></li>
+        <li class="nav-item active"><a href="about.html">about</a></li>
         <li class="nav-item"><a href="contact">contact us</a></li>
         <li class="nav-item"><a href="https://portal.cbrain.mcgill.ca/login">login</a></li>
       </ul>
     </div>
   </nav>
-  <!-- intro section -->
-  <section class="lt-blue-bg hero-pad">
-    <div class="section-content">
-      <div class="hero-box">
-        <img src="images/icon-cbrain.png">
-        <p>CBRAIN is an infrastructure that connects researchers and data from all walks of science to high performance and cloud computing in an easy to manage, reproducible, and user-friendly manner.</p>
-        <a href="getstarted.html"><button>get started</button></a>
+  <!-- Info sections -->
+  <section class="lt-grey-bg hero-pad">
+    <div class="section-content flex">
+      <h1 class="full-width text-center">About Us</h1>
+      <!-- accordian -->
+      <p class="center">
+        Since 2009, the CBRAIN team has included software developers, systems engineers, and research scientists dedicated to building infrastructure to democratize computing and remove the barriers that exist in accomplishing large-scale science. CBRAIN is housed within the McGill Centre for Integrated Neuroscience at McGill University.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pictures sections -->
+  <section>
+    <div class="section-content flex">
+      <div class="team-photo">
+        <img src="images/team/team-alan-evans.jpg">
+        <p class="center">Alan Evans</p>
       </div>
     </div>
   </section>
 
-  <!-- main content -->
-  <section class="footer-end">
-    <div class="section-content value-box">
-      <div class="icons">
-        <div class="icon">
-          <img src="images/icon-computer.png">
-          <p>Accessibility<br>
-            Ability to work across multiple machines and filesystems.
-          </p>
-        </div>
-        <div class="icon">
-          <img src="images/icon-tap.png">
-          <p>Efficiency<br>
-            Quickly moving compute and data behind the scenes.
-          </p>
-        </div>
-        <div class="icon">
-          <img src="images/icon-clipboard.png">
-          <p>Reproducibility<br>
-            Strict standards and pipelines allow for reproducible results.
-          </p>
-        </div>
-      </div>
-      <a href="features.html"><button>features</button></a>
-    </div>
-  </section>
-  
+<script>
+  $(function(){
+    $(".accordian h3").click(function(e){
+    $(".accordian ul p.answer").slideUp();
+      if ($(this).next().is(":hidden")){
+      $(this).next().slideDown();
+      }
+    });
+  });
+</script>
+
   <!-- footer -->
   <footer>  
     <div class="section-content flex">
@@ -125,72 +119,6 @@
   });
 </script>
 
-<script type="text/javascript">
-   $(document).on('ready', function() {
-    $('#slick-slider').slick({
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 6000,
-      draggable: true,
-      mobilefirst: true,
-      pauseonhover: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1500,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-  });
-});
-</script>
 
-<script type="text/javascript">
-   $(document).on('ready', function() {
-    $('#slick-slider-2').slick({
-      dots: true,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 8000,
-      draggable: true,
-      mobilefirst: true,
-      pauseonhover: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 1220,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-  });
-});
-</script>
+
 </body></html>
