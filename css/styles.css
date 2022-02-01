@@ -553,14 +553,33 @@ ul.hide {
 .info-box:hover {
   box-shadow: 1px 1px 8px rgba(0, 0, 0, .25);
 }
+.team-box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
 .team-photo {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: calc(100% - 20px);
+  margin: 10px;
+}
+@media screen and (min-width: 600px){
+  .team-photo {
+    width: calc(33% - 20px);
+  }
 }
 .team-photo img {
   border-radius: 100px;
   margin-bottom: 20px;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-photo p {
+  font-size: .85em;
 }
 /* footer */
 
