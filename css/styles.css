@@ -653,6 +653,7 @@ footer div a {
   max-width: 300px;
   min-width: 125px;
   height: auto;
+  border-radius: 25px;
 }
 footer a img {
   width: 100%;
