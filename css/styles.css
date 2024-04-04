@@ -517,7 +517,7 @@ ul.hide {
   width: 300px;
   margin: 20px auto;
 }
-.hero-box p {
+.hero-box-p {
   max-width: 600px;
   margin: 20px auto;
 }
@@ -576,26 +576,54 @@ ul.hide {
 }
 .team-box {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 .team-photo {
   display: flex;
-  flex-direction: column;
+/*  flex-direction: column;*/
   justify-content: center;
   width: calc(100% - 20px);
-  margin: 10px;
+  margin: 10px 10px 40px 10px;
+}
+.team-photo-holder {
+  display: block;
+  position: relative;
+  width: 215px;
+  height: 215px;
+  border-radius: 25px;
+}
+.team-name {
+  background-color: #002C47;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  color: #fff;
+  overflow: hidden;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 5px 0;
+  font-size: 14px;
 }
 @media screen and (min-width: 600px){
   .team-photo {
-    width: calc(33% - 20px);
+    width: calc(50% - 20px);
+  }
+}
+@media screen and (min-width: 825px){
+  .team-photo {
+    width: calc(33.33% - 20px);
   }
 }
 .team-photo img {
-  border-radius: 100px;
+  border-radius: 25px;
   margin-bottom: 20px;
-  max-width: 200px;
+/*  max-width: 200px;*/
   margin-left: auto;
   margin-right: auto;
 }
