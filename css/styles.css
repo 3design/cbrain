@@ -12,8 +12,9 @@ body {
   min-height: 400px;
   min-width: 300px;
   /*overflow: hidden;*/
-  font-family: 'Questrial', sans-serif;
-  font-size: 14px;
+  font-family: 'Mulish', sans-serif;
+  line-height: 1.1;
+  font-size: 16px;
   color: #002C47;
   scroll-behavior: smooth;
 }
@@ -45,12 +46,12 @@ img {
 ***/
 
 strong {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 700;
   /*color: #FF7F00;*/
 }
 h1, h2 {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 h1 {
   text-decoration: none; 
@@ -69,7 +70,7 @@ h2 {
   margin-bottom: .5rem;
 }
 h3 {
-  font-family: 'Questrial', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.25rem;
   font-style: italic;
   color: #002C47;
@@ -518,7 +519,7 @@ ul.hide {
 }
 .hero-box img {
   width: 300px;
-  margin: 20px auto 40px auto;
+  margin: 20px auto 50px auto;
 }
 .hero-box-p {
   max-width: 600px;
