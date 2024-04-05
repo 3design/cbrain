@@ -12,7 +12,7 @@ body {
   min-height: 400px;
   min-width: 300px;
   /*overflow: hidden;*/
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 14px;
   color: #002C47;
   scroll-behavior: smooth;
@@ -45,18 +45,21 @@ img {
 ***/
 
 strong {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-weight: 700;
   /*color: #FF7F00;*/
 }
 h1, h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 h1 {
   text-decoration: none; 
   font-size: 2rem;
   color: #002C47;
-  margin-bottom: .5rem;
+  margin-bottom: 40px;
+}
+h1.small-margin {
+  margin-bottom: .5em;
 }
 h2 {
   font-size: 1.5rem;
@@ -66,7 +69,7 @@ h2 {
   margin-bottom: .5rem;
 }
 h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Questrial', sans-serif;
   font-size: 1.25rem;
   font-style: italic;
   color: #002C47;
@@ -515,11 +518,12 @@ ul.hide {
 }
 .hero-box img {
   width: 300px;
-  margin: 20px auto;
+  margin: 20px auto 40px auto;
 }
 .hero-box-p {
   max-width: 600px;
   margin: 20px auto;
+  font-size: 18px;
 }
 .value-box {
   text-align: center;
