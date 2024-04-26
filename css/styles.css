@@ -282,7 +282,9 @@ cite {
   width: 100%;
   padding: 0 0 15px 0;
 }
-
+.logo {
+  width: 100px;
+}
 .section-content {
   width: 100%;
   max-width: 1200px;
@@ -426,10 +428,16 @@ ul.nav-list {
   list-style: none;
   clear: both;
 }
-li.nav-item a,
-.branding a {
+li.nav-item a {
   display: inline-block;
   padding: 20px 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.25s ease;
+}
+.branding a {
+  display: inline-block;
+  padding: 13.25px 30px;
   text-decoration: none;
   color: #fff;
   transition: all 0.25s ease;
@@ -648,17 +656,18 @@ footer {
   padding: 80px 0 40px;
   margin-top: auto;
 }
+
 footer div a {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  /*border-radius: 20px;*/
-  padding: 20px 30px;
-  margin: 20px;
-  max-width: 300px;
-  min-width: 125px;
-  height: auto;
-  border-radius: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    /* border-radius: 20px; */
+    padding: 10px 15px;
+    margin: 15px;
+    max-width: 300px;
+    min-width: 125px;
+    height: auto;
+    border-radius: 25px;
 }
 footer a img {
   width: 100%;
